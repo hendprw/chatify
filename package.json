@@ -1,8 +1,11 @@
 {
-  "name": "chatify-js",
+  "name": "chatify",
   "version": "1.0.0",
   "description": "Enterprise Grade WhatsApp Framework (Open Source)",
   "main": "index.js",
+  "bin": {
+    "create-chatify": "./bin/cli.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"No test specified\" && exit 1"
@@ -17,14 +20,14 @@
   "author": "Chatify Team",
   "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.6.0",
+    "@whiskeysockets/baileys": "6.6.0",
     "axios": "^1.6.0",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.12",
     "file-type": "^16.5.4",
     "fluent-ffmpeg": "^2.1.2",
     "form-data": "^4.0.0",
-   "jimp": "^1.6.0",
+    "jimp": "^1.6.0",
     "lodash": "^4.17.21",
     "moment-timezone": "^0.5.43",
     "mongoose": "^7.6.3",
